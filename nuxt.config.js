@@ -57,7 +57,10 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost/puhdas/graphql',
+        httpEndpoint:
+        process.env.NODE_ENV === 'dev'
+        ? 'http://localhost/puhdas/graphql'
+        : 'https://www.tuomovitikainen.fi/puhdas/graphql'
       }
     }
   },

@@ -2,7 +2,7 @@
   <div class="container">
     <metadata></metadata>
     <h1 v-if="post">{{post.title}}</h1>
-    <h1 v-else class="text-center">Page not found</h1>
+    <h1 v-else class="text-center">Sivua ei löydy</h1>
 
     <article v-if="post" class="py-5" v-html="post.content"></article>
     <article v-else class="py-5">Ei löydy</article>
