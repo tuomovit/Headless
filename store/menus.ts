@@ -20,7 +20,7 @@ query MENU_ITEMS($location: MenuLocationEnum) {
 `
 
 const client = new ApolloClient({
-  uri: `http://localhost/puhdas/graphql`,
+  uri: `https://www.tuomovitikainen.fi/puhdas/graphql`,
   fetch,
 })
 
