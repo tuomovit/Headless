@@ -6,6 +6,7 @@ import Vuex from 'vuex'
 
 
 
+
 const menuQuery = gql`
 query MENU_ITEMS($location: MenuLocationEnum) {
   menuItems(where: {location: $location}) {
