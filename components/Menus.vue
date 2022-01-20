@@ -42,6 +42,7 @@ export default {
 .primary-navigation {
   display: flex;
   padding: 1em 0em;
+  margin-bottom: 1em;
   border-bottom: 1px solid rgb(187, 187, 187);
 }
 

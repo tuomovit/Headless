@@ -1,8 +1,7 @@
 <template>
-  <div class="container">
     <div>
       <h1 class="site-title text-center">Headless WordPress</h1>
-      <menus></menus>
+     
       <div class="py-4 posts">
         <div class="row">
           <post-card v-for="post in posts" :key="post.slug" :post="post" />
@@ -16,7 +15,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
