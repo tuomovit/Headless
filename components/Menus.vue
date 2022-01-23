@@ -1,14 +1,12 @@
 <template>
-  <div class="p-8">
-    <div class="grid primary-navigation grid-cols-3 gap-8">
-      <article
-        v-for="menuitem in menuItems.nodes"
-        :key="menuitem.title"
-        class="flex flex-col item"
-      >
-        <NuxtLink :to="`/${menuitem.title.toLowerCase()}`">{{ menuitem.title }}</NuxtLink>
-      </article>
-    </div>
+  <div class="primary-navigation">
+    <article
+      v-for="menuitem in menuItems.nodes"
+      :key="menuitem.title"
+      class="flex flex-col item"
+    >
+      <NuxtLink :to="`/${menuitem.title.toLowerCase()}`">{{ menuitem.title }}</NuxtLink>
+    </article>
   </div>
 </template>
 
@@ -41,9 +39,7 @@ export default {
 <style>
 .primary-navigation {
   display: flex;
-  padding: 1em 0em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid rgb(187, 187, 187);
+  align-items: center;
 }
 
 .item {

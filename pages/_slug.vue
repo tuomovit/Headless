@@ -28,5 +28,6 @@ export default Vue.extend({
     await store.dispatch('pages/getPage', params.slug)
   },
   
+  
 })
 </script>
