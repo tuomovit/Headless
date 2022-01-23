@@ -49,8 +49,7 @@ export default {
   },
   robots: [
     {
-      UserAgent: 'Googlebot',
-      Disallow: () => '/users'
+  
     }
   ],
   apollo: {
