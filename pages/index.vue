@@ -1,7 +1,6 @@
 <template>
-    <div>
+    <div class="main">
       <h1 class="site-title text-center">Headless WordPress</h1>
-     
       <div class="py-4 posts">
         <div class="row">
           <post-card v-for="post in posts" :key="post.slug" :post="post" />
@@ -21,6 +20,7 @@
 import Vue from 'vue'
 import { PostsState } from '~/store/posts'
 import { PagesState } from '~/store/pages'
+
 
 const pageCount = 5
 

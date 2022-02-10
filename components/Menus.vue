@@ -35,15 +35,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.primary-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.item {
-  padding-right: 2em;
-}
-
-</style>
