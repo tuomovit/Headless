@@ -51,7 +51,7 @@ export default {
   robots: [
     {
       UserAgent: '*',
-      Disallow: '/'
+      Disallow: '/users/'
     }
   ],
   apollo: {
