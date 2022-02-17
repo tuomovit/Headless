@@ -1,3 +1,5 @@
+const main_base_URL =  'https://tuomovitikainen.fi';
+
 export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -48,10 +50,14 @@ export default {
     '@nuxtjs/robots',
   ],
   sitemap: {
+    hostname: main_base_URL,
     routes: [
       '/esimerkkisivu',
       '/testailusivu',
     ]
+  },
+  env: {
+    main_base_URL
   },
   robots: [
     {
