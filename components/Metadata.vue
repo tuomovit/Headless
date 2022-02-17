@@ -1,7 +1,7 @@
 <template>
   <div class="p-8">
     <div class="grid grid-cols-3 gap-8">
-     
+     <h1 v-if="meta">{{meta.id}}</h1>
     </div>
   </div>
 </template>
@@ -21,9 +21,22 @@ query MyQuery {
 `;
 
 export default {
+computed: {
+    meta() {
+      return this.$store.state.posts.post
+    },
+    meta() {
+      return this.$store.state.pages.page
+    },
+  },
   apollo: {
     page: {
       query: METADATA_QUERY,
+      variables () {
+        return {
+          myid: this.myvar
+        }
+      }
     },
   },
   data: () => ({

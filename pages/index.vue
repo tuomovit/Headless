@@ -64,13 +64,4 @@ export default Vue.extend({
 .site-title {
   padding-top: 0.5em;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(187, 187, 187);
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
 </style>

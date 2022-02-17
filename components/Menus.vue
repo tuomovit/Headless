@@ -35,3 +35,14 @@ export default {
   },
 }
 </script>
+
+<style>
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+</style>

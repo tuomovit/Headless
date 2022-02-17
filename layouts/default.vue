@@ -26,6 +26,13 @@ export default {
 </script>
 
 <style>
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+     font-weight: 700;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -41,8 +48,16 @@ export default {
   align-items: center;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+
 .item {
   padding-right: 2em;
 }
-
 </style>

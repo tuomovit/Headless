@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <metadata></metadata>
     <h1 v-if="post">{{post.title}}</h1>
     <article v-if="post" class="py-5" v-html="post.content"></article>    
@@ -8,12 +8,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
-
-
-
-
 export default Vue.extend({
+  
+
   
   computed: {
     post() {
