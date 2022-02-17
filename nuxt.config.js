@@ -1,4 +1,5 @@
 export default {
+  ssr: false, // Disable Server Side rendering
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Headless WP',
