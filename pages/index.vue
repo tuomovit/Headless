@@ -35,6 +35,9 @@ export default Vue.extend({
     pages() {
       return (this.$store.state.pages as PagesState).nodes
     },
+    page() {
+      return this.$store.state.pages.page
+    },
   },
   watch: {
     async $route() {
@@ -43,6 +46,7 @@ export default Vue.extend({
     },
   },
   async asyncData({ store, query }) {
+    await store.dispatch('posts/getPage', 'etusivu'),
     await store.dispatch('posts/getPosts', {
       after: query.after,
       before: query.before,
