@@ -1,7 +1,12 @@
 <template>
     <div class="main">
-      <h1 class="site-title text-center">Headless WordPress</h1>
-      <div class="py-4 posts">
+      <section class="block">
+        <h1 v-if="page">{{page.title}}</h1>
+        <p v-if="page" v-html="page.content"></p>
+      </section>
+
+      <div class="block posts">
+      <h1>Artikkelit</h1>
         <div class="row">
           <post-card v-for="post in posts" :key="post.slug" :post="post" />
           <div class="d-flex w-100">
@@ -26,6 +31,9 @@ const pageCount = 5
 
 export default Vue.extend({
   computed: {
+    page() {
+      return this.$store.state.pages.page
+    },
     posts() {
       return (this.$store.state.posts as PostsState).nodes
     },
@@ -35,9 +43,6 @@ export default Vue.extend({
     pages() {
       return (this.$store.state.pages as PagesState).nodes
     },
-    page() {
-      return this.$store.state.pages.page
-    },
   },
   watch: {
     async $route() {
@@ -46,7 +51,7 @@ export default Vue.extend({
     },
   },
   async asyncData({ store, query }) {
-    await store.dispatch('posts/getPage', 'etusivu'),
+    await store.dispatch('pages/getPage', 'etusivu'),
     await store.dispatch('posts/getPosts', {
       after: query.after,
       before: query.before,
@@ -67,5 +72,9 @@ export default Vue.extend({
 <style>
 .site-title {
   padding-top: 0.5em;
+}
+
+.block {
+  margin-bottom: 4rem;
 }
 </style>
