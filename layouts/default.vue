@@ -26,9 +26,6 @@ export default {
 </script>
 
 <style>
-body {
-   font-family: 'Source Sans Pro', sans-serif;
-}
 
 h1 {
      font-weight: 700;
