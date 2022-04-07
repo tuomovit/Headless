@@ -3,7 +3,9 @@
     <div class="card shadow">
       <div class="card-body">
         <h5 class="card-title">
-          Linkki postaukseen
+          <NuxtLink :to="{ name: 'slug', params: { slug: post.slug } }">{{
+             post.title
+           }}</NuxtLink>
         </h5>
         <!-- eslint-disable-next-line vue/no-v-html -->
         <div class="card-text" v-html="post.excerpt"></div>
