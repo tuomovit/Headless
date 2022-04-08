@@ -14,6 +14,9 @@ export default {
       { hid: 'description', name: 'description', content: 'description' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    link: [
+      { rel: 'preconnect', href: 'https://www.tuomovitikainen.fi', crossorigin: true },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
