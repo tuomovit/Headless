@@ -17,6 +17,11 @@ export default {
     link: [
       { rel: 'preconnect', href: 'https://www.tuomovitikainen.fi', crossorigin: true },
     ],
+    script: [
+      {
+        src: "<meta name='google-site-verification' content='T6AzUzWefm1nfXnQ2fboOqgsGOAk6WqEpjBOoauBPbE' />'",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
