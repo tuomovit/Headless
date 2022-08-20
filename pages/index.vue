@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+      dd
       <section class="block">
         <h1 v-if="page">{{page.title}}</h1>
         <p v-if="page" v-html="page.content"></p>

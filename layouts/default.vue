@@ -7,6 +7,7 @@
     <menus></menus>
   </div>
   <Nuxt />
+  <Form />
   <Footer></Footer>
 </div>
 </template>
